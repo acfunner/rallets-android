@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              xmlns:rallets="http://schemas.android.com/apk/res/com.github.rallets"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              tools:ignore="UnknownIdInLayout" android:clipChildren="false"
+              android:background="@color/dark_blue_500"
+              android:orientation="vertical">
+  <include layout="@layout/toolbar_light_dark" />
+  <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+      <LinearLayout
+              android:id="@+id/bannerWrap"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_banner"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:gravity="center">
+        </ImageView>
+      </LinearLayout>
+
+      <LinearLayout
+              android:id="@+id/serverWrap"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:paddingLeft="10dp"
+              android:layout_below="@+id/bannerWrap">
+
+        <ImageView android:id="@+id/serverIcon"
+                   android:layout_width="40dp" android:layout_height="40dp"
+                   android:layout_gravity="center"
+                   android:gravity="center_vertical"
+                   android:src="@drawable/flag_china"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="10dp"
+                      android:gravity="center_vertical">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:id="@+id/statusText"/>
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:id="@+id/serverName" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+              android:id="@+id/sectionWrap"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_below="@+id/serverWrap">
+
+        <com.rallets.TitledRecyclerView
+                android:id="@+id/serverSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                rallets:title="@string/line" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/dark_blue_700" />
+
+        <com.rallets.TitledRecyclerView
+                android:id="@+id/discountSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                rallets:title="@string/discount" />
+
+      </LinearLayout>
+      <com.github.jorgecastilloprz.FABProgressCircle android:id="@+id/fabProgressCircle"
+                                                     app:reusable="true"
+                                                     android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:layout_alignTop="@+id/serverWrap"
+                                                     android:layout_alignParentEnd="true"
+                                                     android:layout_marginEnd="16dp"
+                                                     android:layout_marginTop="@dimen/fab_margin_top">
+        <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_margin="10dp"
+                                                            app:backgroundTint="@color/dark_blue_100"
+                                                            app:srcCompat="@drawable/ic_flash_off"
+                                                            app:pressedTranslationZ="6dp"
+                                                            app:borderWidth="0dp"/>
+      </com.github.jorgecastilloprz.FABProgressCircle>
+    </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>

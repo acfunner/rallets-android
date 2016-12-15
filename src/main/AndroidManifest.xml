@@ -1,10 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools" package="com.github.shadowsocks">
+          xmlns:tools="http://schemas.android.com/tools" package="com.github.rallets">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.touchscreen"
                   android:required="false"/>
@@ -26,12 +30,14 @@
             android:backupAgent=".ShadowsocksBackupAgent"
             android:label="@string/app_name"
             android:theme="@style/Theme.Material"
-            android:banner="@drawable/ic_start_connected">
+            android:banner="@drawable/ic_flash_on">
 
         <meta-data android:name="com.google.android.gms.version"
                    android:value="@integer/google_play_services_version"/>
         <meta-data android:name="com.google.android.backup.api_key"
-                   android:value="AEdPqrEAAAAI_zVxZthz2HDuz9toTvkYvL0L5GA-OjeUIfBeXg"/>
+                   android:value=""/>
+        <meta-data android:value="" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="" android:name="UMENG_CHANNEL"/>
 
         <activity
                 android:name=".MainActivity"
@@ -58,6 +64,45 @@
             </intent-filter>
             <meta-data android:name="android.app.shortcuts"
                        android:resource="@xml/shortcuts"/>
+        </activity>
+
+        <activity android:name="com.rallets.LoginActivity" android:launchMode="singleTask"/>
+
+        <activity android:name="com.rallets.FindPasswordActivity" android:launchMode="singleTask"/>
+
+        <activity android:name="com.rallets.SignupActivity" android:launchMode="singleTask"/>
+
+        <activity android:name="com.rallets.ServerListActivity" android:launchMode="standard"/>
+
+        <activity android:name="com.rallets.PaymentActivity" android:launchMode="standard"/>
+
+        <activity android:name="com.rallets.ShareActivity" android:launchMode="standard"/>
+
+        <!-- Ping++ SDK -->
+        <activity
+                android:name="com.pingplusplus.android.PaymentActivity"
+                android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+                android:launchMode="singleTop"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付 -->
+        <activity-alias
+                android:name=".wxapi.WXPayEntryActivity"
+                android:exported="true"
+                android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- 支付宝 -->
+        <activity
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+                android:exported="false"
+                android:screenOrientation="behind" >
+        </activity>
+        <activity
+                android:name="com.alipay.sdk.auth.AuthActivity"
+                android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+                android:exported="false"
+                android:screenOrientation="behind" >
         </activity>
 
         <activity
@@ -123,7 +168,7 @@
 
         <service android:name=".ShadowsocksTileService" android:label="@string/quick_toggle"
                  android:process=":bg"
-                 android:icon="@drawable/ic_start_connected"
+                 android:icon="@drawable/ic_flash_on"
                  android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />

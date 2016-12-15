@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:app="http://schemas.android.com/apk/res/com.github.shadowsocks">
+                  xmlns:app="http://schemas.android.com/apk/res/com.github.rallets">
 
     <be.mygod.preference.PreferenceCategory
             android:title="@string/proxy_cat">
@@ -9,33 +9,6 @@
                 android:key="profileName"
                 android:summary="%s"
                 android:title="@string/profile_name"/>
-        <be.mygod.preference.EditTextPreference
-                android:key="proxy"
-                android:summary="%s"
-                android:title="@string/proxy"/>
-        <be.mygod.preference.NumberPickerPreference
-                app:min="1"
-                app:max="65535"
-                android:key="remotePortNum"
-                android:summary="%d"
-                android:title="@string/remote_port"/>
-        <be.mygod.preference.NumberPickerPreference
-                app:min="1025"
-                app:max="65535"
-                android:key="localPortNum"
-                android:summary="%d"
-                android:title="@string/port"/>
-        <be.mygod.preference.EditTextPreference
-                android:inputType="textPassword"
-                android:key="sitekey"
-                android:summary="%s"
-                android:title="@string/sitekey"/>
-        <DropDownPreference
-                android:key="encMethod"
-                android:entries="@array/enc_method_entry"
-                android:entryValues="@array/enc_method_value"
-                android:summary="%s"
-                android:title="@string/enc_method"/>
         <SwitchPreference
                 android:key="isAuth"
                 android:summary="@string/onetime_auth_summary"
@@ -70,27 +43,4 @@
                 android:title="@string/udp_dns"/>
 
     </be.mygod.preference.PreferenceCategory>
-
-    <be.mygod.preference.PreferenceCategory
-            android:title="KCP">
-
-        <SwitchPreference
-                android:key="kcp"
-                android:summary="@string/kcp_summary"
-                android:title="KCP"/>
-
-        <be.mygod.preference.NumberPickerPreference
-                app:min="1"
-                app:max="65535"
-                android:key="kcpPort"
-                android:summary="@string/kcp_port_summary"
-                android:title="@string/kcp_port"/>
-
-        <be.mygod.preference.EditTextPreference
-                android:key="kcpcli"
-                android:summary="%s"
-                android:title="@string/kcpcli"/>
-
-    </be.mygod.preference.PreferenceCategory>
-
 </PreferenceScreen>

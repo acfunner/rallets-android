@@ -3,6 +3,7 @@ bin
 gen
 target
 local.properties
+build.properties
 .classpath
 .project
 .settings

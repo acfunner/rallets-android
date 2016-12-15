@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">Shadowsocks</string>
-  <string name="quick_toggle">Toggle</string>
-
   <!-- global/misc category -->
+  <string name="quick_toggle">Toggle</string>
   <string name="misc_cat">Misc</string>
   <string name="profile">Profile</string>
   <string name="profile_summary">Switch to another profile or add new profiles</string>
@@ -78,20 +76,19 @@
   <string name="yes">Yes</string>
   <string name="no">No</string>
   <string name="close">Close</string>
-  <string name="profile_empty">Please select a profile</string>
+  <string name="server_empty">Please select a server</string>
   <string name="proxy_empty">Proxy/Password should not be empty</string>
   <string name="connect">Connect</string>
   <string name="recovering">Resetting…</string>
   <string name="remove_profile">Remove this profile "%s"?</string>
 
   <!-- menu category -->
-  <string name="profiles">Profiles</string>
   <string name="settings">Settings</string>
   <string name="faq">FAQ</string>
-  <string name="faq_url">https://github.com/shadowsocks/shadowsocks-android/blob/master/.github/faq.md</string>
+  <string name="faq_url">https://rallets.com/faq</string>
   <string name="recovery">Reset</string>
   <string name="about">About</string>
-  <string name="about_title">Shadowsocks %s</string>
+  <string name="agreement_title">Agreement</string>
   <string name="edit">Edit</string>
   <string name="share">Share</string>
   <string name="add_profile">Add Profile</string>
@@ -148,4 +145,103 @@
   <string name="acl_rule_templates_generic">Subnet/Hostname PCRE pattern</string>
   <string name="acl_rule_templates_domain">Domain name and all its subdomain names</string>
   <string name="edit_rule">Edit rule</string>
+
+    <!-- my profile -->
+    <string name="mobile">Mobile</string>
+    <string name="nickname">Nickname</string>
+    <string name="balance">Account Balance</string>
+    <string name="remaining_time">Remaining Time</string>
+    <string name="flow">Flow</string>
+    <string name="servers">Servers</string>
+    <string name="max_logins">Maximum Logins</string>
+    <string name="invitation_code">Invitation Code</string>
+    <!-- area -->
+    <string name="area">Your Area in China</string>
+    <string name="NC">North China</string>
+    <string name="SC">South China</string>
+    <string name="WC">West China</string>
+    <string name="EC">East China</string>
+    <string name="CC">Central China</string>
+    <string name="not_set">Not Set</string>
+    <string name="save_failed">Save Failed</string>
+    <string name="save_success">Save Success</string>
+    <string name="day">Day</string>
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+    <string name="second">Second</string>
+    <string name="left_premium_traffic">Left Premium Traffic</string>
+    <string name="premium_traffic">Premium Traffic</string>
+    <string name="loading">Loading...</string>
+    <string name="logout">Logout</string>
+    <string name="go_back">Go Back</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="email_or_mobile">Email / Mobile</string>
+    <string name="password">Password</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="incorrect_email_or_mobile">Email or mobile number is not correct</string>
+    <string name="incorrect_password">Your password is incorrect, which should contain at least 6 characters with at least 1 number and at least 1 alphebet</string>
+    <string name="account">Account</string>
+    <string name="home">Home</string>
+    <string name="server_list">Server List</string>
+    <string name="app_name">Rallets</string>
+    <string name="screen_name" translatable="false">Rallets ▾</string>
+    <string name="email">Email</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_logout_title">Are you sure you want to logout?</string>
+    <string name="referral_code">"Referral Code (Optional)"</string>
+    <string name="unknown_error">There is an unknown error when %s, send an email to info@rallets.com about it and we will help you</string>
+    <string name="retry_later">There is an unknown error, please try again later</string>
+    <string name="dismatch_passwords">Password confirmation does not match password</string>
+    <string name="find_password">"Find Password"</string>
+    <string name="send_verification_code">"Send Verification Code"</string>
+    <string name="already_sent">"Already Sent"</string>
+    <string name="verification_code">"Verification Code"</string>
+    <string name="submit">"Submit"</string>
+    <string name="payments">"Payments"</string>
+    <string name="wechat">"Wechat"</string>
+    <string name="alipay">"Alipay"</string>
+    <string name="payment_success">"Payment is Succeeded"</string>
+    <string name="payment_fail">"Payment is Failed"</string>
+    <string name="payment_cancel">"Payment is Cancelled"</string>
+    <string name="payment_invalid">"Payment is Invalid"</string>
+    <string name="reason">"Reason"</string>
+    <string name="new_version_avaiable">"New version(V%s) of Rallets is now avaiable!"</string>
+    <string name="notice">"Notice"</string>
+    <string name="message_link">"Message Link"</string>
+    <string name="new_message">"New Message"</string>
+    <string name="yuan">"CNY"</string>
+
+  <!-- intro -->
+  <string name="rallets">Rallets</string>
+  <string name="line">Line</string>
+  <string name="current_line">Current Line</string>
+  <string name="remaining">Remaining</string>
+  <string name="discount">Discount</string>
+  <string name="bill">Bill</string>
+  <string name="coupon">Coupon</string>
+  <string name="invite">Invite</string>
+  <string name="coupon_hint">Enter coupon code</string>
+  <string name="invite_hint">Get free traffic</string>
+  <string name="querying">Querying</string>
+  <string name="select_line">Select a line</string>
+  <string name="outgoing">Outgoing</string>
+  <string name="incoming">Incoming</string>
+  <string name="current_speed">Speed</string>
+  <string name="server_list_hint">Support Android/Windows/Mac/Linux</string>
+  <string name="coming_soon">Coming soon</string>
+  <string name="enter_coupon">Enter coupon code</string>
+  <string name="use_coupon_success">Coupon used successfully</string>
+  <string name="use_coupon_failed">Failed to use coupon</string>
+
+  <!-- progress bar -->
+  <string name="querying_data">Querying data...</string>
+
+  <string name="traffic_empty_alert">Your account is out of traffic, please charge your account</string>
+  <string name="ssl_error_alert">You are browing an insecure website, would like to continue?</string>
+  <string name="continue_browse">Continue</string>
+  <string name="cancel_browse">Cancel</string>
+
 </resources>

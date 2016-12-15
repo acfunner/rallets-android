@@ -219,4 +219,16 @@
         <item>@string/acl_rule_templates_generic</item>
         <item>@string/acl_rule_templates_domain</item>
     </string-array>
+
+    <string-array name="area_names">
+        <item>@string/EC</item>
+        <item>@string/NC</item>
+        <item>@string/SC</item>
+    </string-array>
+
+    <string-array name="area_values">
+        <item>EC</item>
+        <item>NC</item>
+        <item>SC</item>
+    </string-array>
 </resources>

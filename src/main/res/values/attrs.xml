@@ -8,4 +8,10 @@
         <attr name="max" format="integer" />
         <attr name="min" format="integer" />
     </declare-styleable>
+    <declare-styleable name="TitledRecyclerView">
+        <attr name="title" format="string" />
+        <attr name="showArrow" format="boolean" />
+        <attr name="listPadding" format="dimension" />
+        <attr name="listTextSize" format="dimension" />
+    </declare-styleable>
 </resources>

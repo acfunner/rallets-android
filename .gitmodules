@@ -3,7 +3,7 @@
 	url = https://github.com/shadowsocks/shadowsocks-libev
 [submodule "src/main/jni/badvpn"]
 	path = src/main/jni/badvpn
-	url = https://github.com/shadowsocks/badvpn.git
+	url = git@git.oschina.net:ralletstellar/badvpn.git
 	branch = shadowsocks-android
 [submodule "src/main/jni/libancillary"]
 	path = src/main/jni/libancillary
@@ -21,9 +21,6 @@
 	path = src/main/jni/pdnsd
 	url = https://github.com/shadowsocks/pdnsd.git
 	branch = shadowsocks-android
-[submodule "kcptun/kcptun"]
-	path = kcptun/kcptun
-	url = https://github.com/shadowsocks/kcptun
 [submodule "kcptun/go"]
 	path = kcptun/go
 	url = https://github.com/shadowsocks/go
@@ -33,3 +30,6 @@
 [submodule "src/main/jni/pcre"]
 	path = src/main/jni/pcre
 	url = https://android.googlesource.com/platform/external/pcre
+[submodule "kcptun/kcptun"]
+	path = kcptun/kcptun
+	url = git@git.oschina.net:ralletsnetwork/kcptun-for-android.git

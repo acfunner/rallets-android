@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="quick_toggle">"切換"</string>
 
 <!-- global/misc category -->
+<string name="quick_toggle">"切換"</string>
 <string name="misc_cat">"其他"</string>
 <string name="profile">"設定檔"</string>
 <string name="profile_summary">"切換至其他設定檔或新增新設定檔"</string>
@@ -65,19 +65,18 @@
 <string name="yes">"是"</string>
 <string name="no">"否"</string>
 <string name="close">"關閉"</string>
-<string name="profile_empty">"請選擇設定檔"</string>
+<string name="server_empty">"請選擇服務器"</string>
 <string name="proxy_empty">"Proxy 或密碼不可以空白"</string>
 <string name="connect">"連線"</string>
 <string name="recovering">"重設中…"</string>
 <string name="remove_profile">"移除此設定檔 %s?"</string>
 
 <!-- menu category -->
-<string name="profiles">"設定檔"</string>
 <string name="settings">"設定"</string>
 <string name="faq">"常見問題"</string>
 <string name="recovery">"重設"</string>
 <string name="about">"關於"</string>
-<string name="about_title">"Shadowsocks %s"</string>
+<string name="agreement_title">"服務條款"</string>
 <string name="edit">"編輯"</string>
 <string name="share">"分享"</string>
 <string name="add_profile">"新增設定檔"</string>
@@ -139,4 +138,68 @@
 <string name="proxied_apps_summary_v21">"為已選擇的應用程式設定 Proxy"</string>
 <string name="acl_rule_templates_generic">"子網路/主機名稱 PCRE 模式"</string>
 <string name="acl_rule_templates_domain">"網域及其所有子網域"</string>
+
+    <!-- my profile -->
+    <string name="email">郵箱</string>
+    <string name="mobile">手機</string>
+    <string name="balance">賬戶餘額</string>
+    <string name="remaining_time">剩餘時間</string>
+    <string name="servers">服務器</string>
+    <string name="max_logins">最大登錄數</string>
+    <string name="invitation_code">邀請碼</string>
+    <!-- area -->
+    <string name="area">所在中國地區</string>
+    <string name="NC">華北</string>
+    <string name="SC">華南</string>
+    <string name="WC">西部</string>
+    <string name="EC">華東</string>
+    <string name="CC">華中</string>
+    <string name="NONE">華中</string>
+    <string name="not_set">未設置</string>
+    <string name="save_failed">保存失敗</string>
+
+    <string name="day">天</string>
+    <string name="hour">小時</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="left_premium_traffic">剩餘極速流量</string>
+    <string name="premium_traffic">極速流量</string>
+    <string name="loading">加載中...</string>
+    <string name="logout">登出</string>
+    <string name="go_back">返回</string>
+
+    <string name="login">登陸</string>
+    <string name="signup">注冊</string>
+    <string name="email_or_mobile">郵箱 / 手機</string>
+    <string name="password">密碼</string>
+    <string name="password_confirmation">確認密碼</string>
+    <string name="incorrect_email_or_mobile">郵箱或手機號碼格式不正確</string>
+    <string name="incorrect_password">密碼格式不正確，至少需要6位字符，且含至少1位字母和數字</string>
+    <string name="account">主頁</string>
+    <string name="server_list">服務器列表</string>
+    <string name="app_name">星際加速器</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_logout_title">確認登出星際加速器嗎？</string>
+    <string name="referral_code">"邀請碼 (選填)"</string>
+    <string name="unknown_error">%s時發生未知錯誤，請發送郵件至info@rallets.com告知，我們会尽快帮您解决</string>
+    <string name="dismatch_passwords">密碼確認於密碼不匹配</string>
+    <string name="find_password">"找回密碼"</string>
+    <string name="send_verification_code">"發送驗證碼"</string>
+    <string name="already_sent">"已發送"</string>
+    <string name="verification_code">"驗證碼"</string>
+    <string name="submit">"提交"</string>
+    <string name="payments">"支付"</string>
+    <string name="wechat">"微信"</string>
+    <string name="alipay">"支付寶"</string>
+    <string name="payment_success">"支付成功"</string>
+    <string name="payment_fail">"支付失敗"</string>
+    <string name="payment_cancel">"支付被取消"</string>
+    <string name="payment_invalid">"支付失效"</string>
+    <string name="reason">"原因"</string>
+    <string name="new_version_avaiable">"星際加速器有最新版本(V%s)可更新！"</string>
+    <string name="notice">"通知"</string>
+    <string name="message_link">"消息鏈接"</string>
+    <string name="new_message">"新消息"</string>
+    <string name="yuan">"圓"</string>
 </resources>

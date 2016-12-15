@@ -21,10 +21,4 @@
                   android:numericShortcut="3"/>
         </menu>
     </item>
-    <item android:id="@+id/action_export"
-          android:title="@string/action_export"
-          android:alphabeticShortcut="e"
-          android:numericShortcut="1"
-          android:icon="@drawable/ic_content_copy"
-          app:showAsAction="always"/>
 </menu>

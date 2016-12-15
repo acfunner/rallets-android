@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:rallets="http://schemas.android.com/apk/res/com.github.rallets"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:background="@drawable/page_bg"
+>
+    <include layout="@layout/toolbar_light_dark" />
+    <com.rallets.TitledRecyclerView
+            rallets:listTextSize="18sp"
+            rallets:listPadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/serverList" />
+</LinearLayout>

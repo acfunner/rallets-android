@@ -8,30 +8,62 @@
 
     <style name="Theme.MaterialBase" parent="MaterialDrawerTheme.Light.DarkToolbar">
         <!--suppress NewApi -->
-        <item name="android:navigationBarColor">@color/material_primary_700</item>
-        <item name="colorAccent">@color/material_accent_200</item>
-        <item name="colorButtonNormal">@color/material_accent_200</item>
-        <item name="colorPrimary">@color/material_primary_500</item>
-        <item name="colorPrimaryDark">@color/material_primary_700</item>
+        <item name="colorAccent">@color/primary_500</item>
+        <item name="colorButtonNormal">@color/primary_500</item>
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryDark">@color/dark_blue_700</item>
         <item name="preferenceTheme">@style/Theme.Material.PreferenceThemeOverlay</item>
+        <!--<style name="Theme.MaterialBase" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--https://chromium.googlesource.com/android_tools/+/HEAD/sdk/extras/android/support/v7/appcompat/res/values/themes.xml-->
+            <!--Otherwise getting error Android: getting Resources$NotFoundException for abc_ic_ab_back_material-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlNormal">@color/grey_5FF</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorPrimary">@color/primary_text_color_selector</item>
+        <item name="android:textColorSecondary">@color/secondary_text_color_selector</item>
+    </style>
 
-        <item name="material_drawer_selected_text">@color/material_accent_200</item>
+    <style name="Theme.MaterialBase.White" parent="Theme.MaterialBase">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EditText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey_7FF</item>
     </style>
 
     <style name="Theme.Material.Dialog" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">@color/material_primary_500</item>
+        <item name="colorAccent">@color/primary_500</item>
         <item name="colorButtonNormal">@color/material_accent_200</item>
-        <item name="colorPrimary">@color/material_primary_500</item>
-        <item name="colorPrimaryDark">@color/material_primary_700</item>
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryDark">@color/primary_700</item>
         <item name="preferenceTheme">@style/Theme.Material.PreferenceThemeOverlay</item>
         <item name="windowNoTitle">true</item>
     </style>
-
     <!-- Fix for wrong padding on v17-v20 based on: https://github.com/Gericop/Android-Support-Preference-V7-Fix/blob/a6082cb/preference-v7/src/main/res/values-v17/styles.xml -->
+
     <style name="Theme.Material" parent="Theme.MaterialBase">
         <item name="android:listPreferredItemPaddingStart">16dp</item>
         <item name="android:listPreferredItemPaddingEnd">16dp</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
+
+    <style name="RalletsAlertDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/primary_500</item>
+        <item name="colorButtonNormal">@color/material_accent_200</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimary">@color/primary_500</item>
+        <item name="colorPrimaryDark">@color/primary_700</item>
+        <item name="windowFixedWidthMajor">80%</item>
+        <item name="windowFixedWidthMinor">60%</item>
+    </style>
+
     <!-- This is needed because the default PreferenceCategory appearance doesn't use bold text style -->
     <style name="Preference_TextAppearanceMaterialBody2">
         <item name="android:textSize">14sp</item>
@@ -54,5 +86,4 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
-
 </resources>
